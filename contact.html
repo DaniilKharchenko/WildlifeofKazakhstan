@@ -1,412 +1,197 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-  <title>Contact - Wildlife of Kazakhstan</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet">
+  <title>Contact Us - Wildlife of Kazakhstan</title>
 
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
 <div class="page-layout">
 
-
   <header>
+    <h1>Contact Us</h1>
 
-    <h1>Wildlife of Kazakhstan</h1>
-
-    <nav class="navbar navbar-expand-lg navbar-dark">
-
-      <div class="container-fluid">
-
-        <a class="navbar-brand"
-           href="index.html">
-
-          Wildlife KZ
-
-        </a>
-
-
-        <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar"
-                aria-controls="mainNavbar"
-                aria-expanded="false"
-                aria-label="Open navigation">
-
-          <span class="navbar-toggler-icon"></span>
-
-        </button>
-
-
-        <div class="collapse navbar-collapse"
-             id="mainNavbar">
-
-          <div class="nav-menu navbar-nav ms-auto">
-
-            <a class="nav-link"
-               href="index.html">
-              Home
-            </a>
-
-            <a class="nav-link"
-               href="animals.html">
-              Animals
-            </a>
-
-            <a class="nav-link"
-               href="parks.html">
-              National Parks
-            </a>
-
-            <a class="nav-link active"
-               href="contact.html"
-               aria-current="page">
-              Contact
-            </a>
-
-          </div>
-
-        </div>
-
-      </div>
-
+    <nav class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="animals.html">Animals</a>
+      <a href="parks.html">National Parks</a>
+      <a href="contact.html">Contact</a>
     </nav>
-
   </header>
 
-
   <aside>
-
     <h3>Explore</h3>
 
     <ul>
-
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-
-      <li>
-        <a href="animals.html">Animals</a>
-      </li>
-
-      <li>
-        <a href="parks.html">National Parks</a>
-      </li>
-
-      <li>
-        <a href="contact.html">Contact</a>
-      </li>
-
+      <li><a href="index.html">Home</a></li>
+      <li><a href="animals.html">Animals</a></li>
+      <li><a href="parks.html">National Parks</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-
   </aside>
-
 
   <main>
 
-
     <section class="contact-intro">
 
-      <h2>Contact Us</h2>
+      <h2>Contact Our Team</h2>
 
-      <img src="images/kazakhstan-nature.jpg"
-           alt="Nature of Kazakhstan">
+      <img src="images/kazakhstan-mountains.jpg"
+           alt="Mountains of Kazakhstan">
 
       <p>
-        If you have questions about our website,
-        you can contact our team using the form below.
+        If you have a question about Kazakhstan's wildlife,
+        you can send us a message using the form below.
       </p>
 
     </section>
 
-
     <section>
 
-      <h2>Contact Form</h2>
+      <h2>Send a Message</h2>
 
-      <form>
+      <form id="contact-form">
 
+        <label for="name">Your Name</label>
+        <input type="text"
+               id="name"
+               name="name"
+               placeholder="Enter your name"
+               required>
 
-        <div class="mb-3">
+        <label for="email">Your Email</label>
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="Enter your email"
+               required>
 
-          <label for="name"
-                 class="form-label">
+        <label for="animal">Choose an Animal</label>
 
-            Name
+        <select id="animal" name="animal">
+          <option value="snow-leopard">Snow Leopard</option>
+          <option value="saiga">Saiga</option>
+          <option value="wolf">Wolf</option>
+          <option value="eagle">Golden Eagle</option>
+        </select>
 
-          </label>
+        <label for="message">Your Message</label>
 
-          <input type="text"
-                 class="form-control"
-                 id="name"
-                 placeholder="Enter your name"
-                 required>
+        <textarea id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Write your message here"></textarea>
 
-        </div>
-
-
-        <div class="mb-3">
-
-          <label for="email"
-                 class="form-label">
-
-            Email
-
-          </label>
-
-          <input type="email"
-                 class="form-control"
-                 id="email"
-                 placeholder="Enter your email"
-                 required>
-
-        </div>
-
-
-        <div class="mb-3">
-
-          <label for="subject"
-                 class="form-label">
-
-            Subject
-
-          </label>
-
-          <input type="text"
-                 class="form-control"
-                 id="subject"
-                 placeholder="Enter subject">
-
-        </div>
-
-
-        <div class="mb-3">
-
-          <label for="message"
-                 class="form-label">
-
-            Message
-
-          </label>
-
-          <textarea class="form-control"
-                    id="message"
-                    rows="5"
-                    placeholder="Write your message"
-                    required>
-                    </textarea>
-
-        </div>
-
-
-        <button type="submit"
-                class="btn btn-success">
-
-          Send Message
-
-        </button>
-
+        <button type="submit">Send</button>
 
       </form>
 
     </section>
 
-
-    <section class="p-3 p-md-4 mb-4">
+    <section class="team-member">
 
       <h2>Our Team</h2>
 
+      <p>
+        This website was created by two students as part of
+        an HTML and CSS assignment about the wildlife of Kazakhstan.
+      </p>
 
-      <div class="row g-4">
+      <h3>Muhammed Utemisov</h3>
 
+      <p>
+        Muhammed worked on the National Parks and Contact pages.
+        He also worked on the HTML structure and CSS styling.
+      </p>
 
-        <div class="col-12 col-lg-6">
+      <h3>Daniil Kharchenko</h3>
 
-          <div class="team-member p-3 rounded h-100">
-
-            <h3>Muhammed Utemisov</h3>
-
-            <p>
-              Worked on the National Parks and
-              Contact pages.
-            </p>
-
-            <p>
-              Worked with HTML, CSS and Bootstrap.
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <div class="col-12 col-lg-6">
-
-          <div class="team-member p-3 rounded h-100">
-
-            <h3>Daniil Kharchenko</h3>
-
-            <p>
-              Worked on the Home and Animals pages.
-            </p>
-
-            <p>
-              Worked with HTML, CSS and Bootstrap.
-            </p>
-
-          </div>
-
-        </div>
-
-
-      </div>
+      <p>
+        Daniil worked on the Home and Animals pages
+        and prepared information about Kazakhstan's wildlife.
+      </p>
 
     </section>
 
+    <section>
 
-    <section class="p-3 p-md-4 mb-4">
+      <h2>Other Pages</h2>
+
+      <p>
+        You can continue exploring our website here:
+      </p>
+
+      <ul>
+        <li><a href="index.html">Home page</a></li>
+        <li><a href="animals.html">Animals</a></li>
+        <li><a href="parks.html">National Parks</a></li>
+      </ul>
+
+    </section>
+
+    <section>
 
       <h2>Explore Wildlife</h2>
 
+      <div class="cards">
 
-      <div class="row g-4">
+        <article class="card">
 
+          <h3>National Parks</h3>
 
-        <div class="col-12 col-md-6 col-lg-4">
+          <p>
+            Learn about protected natural areas and beautiful
+            landscapes of Kazakhstan.
+          </p>
 
-          <div class="card h-100">
+          <a class="button" href="parks.html">View Parks</a>
 
-            <img src="images/kazakhstan-nature.jpg"
-                 class="card-img-top"
-                 alt="Nature of Kazakhstan">
+        </article>
 
-            <div class="card-body d-flex flex-column">
+        <article class="card">
 
-              <h3 class="card-title">
-                Home
-              </h3>
+          <h3>Animals</h3>
 
-              <p class="card-text">
-                Learn more about the wildlife
-                and natural landscapes of Kazakhstan.
-              </p>
+          <p>
+            Discover different wild animals that live
+            in Kazakhstan.
+          </p>
 
-              <a href="index.html"
-                 class="btn btn-success mt-auto">
+          <a class="button" href="animals.html">View Animals</a>
 
-                Go to Home
+        </article>
 
-              </a>
+        <article class="card">
 
-            </div>
+          <h3>Home</h3>
 
-          </div>
+          <p>
+            Return to the main page and explore
+            our wildlife website.
+          </p>
 
-        </div>
+          <a class="button" href="index.html">Go Home</a>
 
-
-        <div class="col-12 col-md-6 col-lg-4">
-
-          <div class="card h-100">
-
-            <img src="images/snow-leopard.jpg"
-                 class="card-img-top"
-                 alt="Snow leopard">
-
-            <div class="card-body d-flex flex-column">
-
-              <h3 class="card-title">
-                Animals
-              </h3>
-
-              <p class="card-text">
-                Discover animals that live
-                in different regions of Kazakhstan.
-              </p>
-
-              <a href="animals.html"
-                 class="btn btn-success mt-auto">
-
-                View Animals
-
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <div class="col-12 col-md-6 col-lg-4">
-
-          <div class="card h-100">
-
-            <img src="images/charyn.jpg"
-                 class="card-img-top"
-                 alt="Charyn Canyon">
-
-            <div class="card-body d-flex flex-column">
-
-              <h3 class="card-title">
-                National Parks
-              </h3>
-
-              <p class="card-text">
-                Explore national parks and
-                beautiful natural places.
-              </p>
-
-              <a href="parks.html"
-                 class="btn btn-success mt-auto">
-
-                View Parks
-
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
+        </article>
 
       </div>
 
     </section>
 
-
   </main>
 
-
   <footer>
-
-    <p>
-      Team members: Daniil Kharchenko, Muhammed Utemisov
-    </p>
-
+    <p>Team members: Muhammed Utemisov, Daniil Kharchenko</p>
   </footer>
-
 
 </div>
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
-
 </body>
-
 </html>
